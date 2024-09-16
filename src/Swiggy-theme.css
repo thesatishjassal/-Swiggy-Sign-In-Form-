@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Font Variables */
+:root {
+  --font-family: "Poppins", sans-serif;
+  --font-color: #1a1919;
+  --cta-color: #fc8019;
+  --cta-color-hover: #f8780f;
+  --input-height: 65px;
+  --input-font-size: 14px;
+  --input-padding: 10px 20px;
+  --btn-height: 50px;
+  --btn-font-size: 14px;
+  --btn-font-weight: 600;
+  --shadow-color: rgba(0, 0, 0, 0.12);
+  --border-radius: 0;
+}
+
+/* Global Styles */
+* {
+  font-family: var(--font-family);
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  color: var(--font-color);
+}
+
+/* Font Weights */
+.poppins-thin { font-weight: 100; }
+.poppins-extralight { font-weight: 200; }
+.poppins-light { font-weight: 300; }
+.poppins-regular { font-weight: 400; }
+.poppins-medium { font-weight: 500; }
+.poppins-semibold { font-weight: 600; }
+.poppins-bold { font-weight: 700; }
+.poppins-extrabold { font-weight: 800; }
+.poppins-black { font-weight: 900; }
+
+/* Authentication Card */
+.auth_card {
+  max-width: 400px;
+  box-shadow: 0 0 2px 0 #f3f3f3;
+  border-radius: var(--border-radius);
+}
+.panel-body {
+  padding:0 25px 30px;
+}
+img.zomato-banner {
+  width: 100%;
+}
+.auth_card input {
+  height: var(--input-height);
+  width: 100%;
+  font-size: var(--input-font-size);
+  padding: var(--input-padding);
+  font-weight: 500;
+  border-radius: var(--border-radius);
+  line-height: 2px;
+}
+
+/* Buttons */
+button.btn {
+  width: 100%;
+  text-align: center;
+  line-height: var(--btn-height);
+  font-size: var(--btn-font-size);
+  font-weight: var(--btn-font-weight);
+  height: var(--btn-height);
+  padding: 0 2rem;
+  color: #fff;
+  background-color: var(--cta-color);
+  box-shadow: 0 1px 3px 0 var(--shadow-color);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  border-radius: var(--border-radius);
+  transition: all 0.4s ease-in-out;
+}
+
+/* Input Styles */
+.border-botton-none { border-bottom: 0; }
+.form-container { margin: 20px auto 0; }
+.mb-4 { margin-bottom: 14px; }
+
+/* Links and Text */
+a.cta, span.cta {
+  color: var(--cta-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.div-25 {
+  max-width: 10%;
+  border: 1px solid var(--font-color);
+  margin-bottom: 44px !important;
+  border-radius: var(--border-radius);
+}
+
+p.action-text {
+  font-size: 13px;
+  line-height: 1.45;
+  margin-bottom: 10px;
+  padding-right: 4px;
+}
+
+p.term-cond-text {
+  font-size: 12px;
+  word-spacing: 0.5px;
+}
+
+p.refrral-label {
+  font-size: 14px;
+  line-height: 2;
+  margin: 15px 0;
+  font-weight: 300;
+  color: #505052;
+}
+
+p.refrral-label a.cta {
+  font-weight: 400;
+}
+
+/* Floating Label Input */
+.floating-label-input {
+  position: relative;
+}
+
+.floating-label-input input {
+  background: transparent;
+  outline: none;
+  border-radius: var(--border-radius);
+}
+
+.floating-label-input label {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  font-size: 14px;
+  color: #aaa;
+  transition: all 0.2s ease-out;
+  pointer-events: none;
+  padding: 0 4px;
+}
+
+.floating-label-input.focused label,
+.floating-label-input label.active {
+  top: 6px;
+  font-size: 11px;
+  color: #7e808c;
+  font-weight: 300;
+}
+
+.floating-label-input input:focus + label {
+  color: var(--font-color);
+}
+
+.form-control.focus {
+  border: none;
+}
+
+.rs-input:focus,
+.rs-input:hover:not(:disabled) {
+  border-color: #d4d5d9;
+}
+
+.rs-input:focus { outline: none; }
+
+.rs-btn:focus, .rs-btn:hover {
+  background-color: var(--cta-color-hover);
+  color: #fff;
+}
+
+/* Icons and Images */
+img.swiggy-icon {
+  max-width: 70px;
+}
+
+.otp_container {
+  background: #f2f1f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  font-size: 24px;
+  color: var(--cta-color);
+}
+
+.otp_container svg.rs-icon {
+  font-size: 26px;
+  color: var(--cta-color);
+}
+
+label.edit_mobilenumber {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.back-arrow {
+  display: block;
+  margin: 5px 0 15px;
+}
+
+.back-arrow svg.rs-icon {
+  color: #535665;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+p.action-text span.cta.phonenumber {
+  font-size: 14px;
+  padding-left: 2px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.auth_container {
+  position: relative;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(10px); }
+}
+
+.loginform-container,
+.otpverification-container,
+.registration-form,
+.otpverification-container {
+  transition: all 0.5s ease;
+}
+#mb-5 {
+  margin-bottom: 30px;
+}
+.rs-divider-horizontal {
+  margin: 6px 0;
+}
+.zomato-cta{
+  color: #ef4f5f !important
+}
+.zomoto_btn{
+  background-color: #ef4f5f !important;
+}
+.mt-30{
+  margin-top: 30px;
+}
+
+.floating-label-input label {
+  color: initial;
+}
+
+.floating-label-input label.active {
+  top: 6px;
+  font-size: 12px;
+}
+
+.floating-label-input .form-control.error + label {
+  color: red !important;
+}
+
+/* Success button style */
+.success-btn {
+  background-color: rgb(27, 202, 27) !important;
+  box-shadow: 0 0 15px rgba(214, 214, 214, 0.4);
+  transform: scale(1);
+}
+
+/* Text fade animation */
+@keyframes text-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn span {
+  animation: text-fade 0.5s ease-in-out;
+  color: rgb(255, 255, 255) !important;
+}
+p.error {
+  line-height: 1.8;
+  font-size: 12px;
+  color: #f72e2e;
+}

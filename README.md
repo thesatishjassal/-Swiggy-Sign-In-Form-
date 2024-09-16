@@ -1,8 +1,16 @@
-# React + Vite
+# Swiggy Sign In Form - React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project provides a seamless Swiggy-style Sign In form, built with React.js and Vite, offering fast development and excellent performance with HMR (Hot Module Replacement).
 
-Currently, two official plugins are available:
+## Project Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This template sets up React in Vite with essential ESLint rules and HMR for a smooth developer experience.
+
+### Libraries Used:
+- **React.js**: A JavaScript library for building user interfaces.
+- **Vite**: Next-generation frontend tooling that is fast and modern.
+- **RSuite**: A suite of React components for enterprise system products.
+- **Font Awesome**: Icon library and toolkit.
+- **Google Fonts (Poppins)**: Custom font used in the design.
+
+# Thanks

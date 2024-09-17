@@ -18,7 +18,7 @@ const validationSchema = Yup.object({
 });
 
 const SingInForm = () => {
-  const [timeLeft, setTimeLeft] = useState(60);
+  const [timeLeft, setTimeLeft] = useState(0);
   const [resendPass, setResendPass] = useState(false);
   const [showOtpVerification, setShowOtpVerification] = useState(false);
   const [isVerified, setIsVerified] = useState(false);
@@ -35,6 +35,9 @@ const SingInForm = () => {
       } else {
         console.log("OTP Verified:", values);
       } 
+      if(values.phonenumber !== "" ){
+        setTimeLeft(60)
+      }
       if (values.otp.length === 6) {
         setIsVerified(true);
         console.log("OTP Verified:", values.otp);
@@ -168,8 +171,8 @@ const SingInForm = () => {
                   <p className="error">OTP Must be exactly 6 digits.</p>
                 )}
               </div>
-              {resendPass ? (
-                <p className="refrral-label">
+              {timeLeft == 0 ? (
+                <p className="refrral-label mb-4">
                   Did not receive OTP? &nbsp;
                   <a href="#" className="cta" onClick={handleResendClick}>
                     Resend
@@ -178,8 +181,8 @@ const SingInForm = () => {
               ) : null}
               <Button
                 type="submit"
-                className={`btn ${isVerified ? "success-btn" : ""} ${
-                  resendPass ? "" : "mt-30"
+                className={`btn  ${isVerified ? "success-btn" : ""} ${
+                  resendPass ? "mt-4" : "mt-30"
                 }`}
                 block
                 disabled={formik.values.otp.length !== 6}

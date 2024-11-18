@@ -6,7 +6,6 @@ import { Button, Divider, Stack } from "rsuite";
 import FloatingLabelInput from "./FloatingLabelInput";
 import ArowBackIcon from "@rsuite/icons/ArowBack";
 import MessageIcon from "@rsuite/icons/Message";
-import SwiggyLogo from "../assets/swiggy-logo.png";
 import "rsuite/dist/rsuite.min.css";
 
 // Validation Schema
@@ -34,9 +33,9 @@ const SingInForm = () => {
         setShowOtpVerification(true);
       } else {
         console.log("OTP Verified:", values);
-      } 
-      if(values.phonenumber !== "" ){
-        setTimeLeft(60)
+      }
+      if (values.phonenumber !== "") {
+        setTimeLeft(60);
       }
       if (values.otp.length === 6) {
         setIsVerified(true);
@@ -83,7 +82,7 @@ const SingInForm = () => {
   };
 
   return (
-    <Panel shaded bordered bodyFill className="auth_card">
+    <Panel shaded bordered bodyFill className="auth_card ">
       <img src="/banner.png" className="zomato-banner" />
       <div className="panel-body">
         <div className="auth_container">

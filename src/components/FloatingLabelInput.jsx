@@ -8,7 +8,7 @@ const FloatingLabelInput = ({
   onChange,
   error,
   disabled,
-  statusCode
+  statusCode,
 }) => {
   const [focused, setFocused] = useState(false);
 
